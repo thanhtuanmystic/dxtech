@@ -205,6 +205,12 @@ table {
 }
 .header .header-content .main-content .btn-part {
 }
+.header .header-content .partner {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+}
+
 .partner-title {
     color: #FFF;
     font-family: "Open Sans", sans-serif; 
