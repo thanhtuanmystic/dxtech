@@ -16,12 +16,12 @@
     <header class="dxt-header">
       <div class="header-top">
         <div class="container">
-          <img src="./assets/img/logo.png" alt="logo" />
+          <img srcset="./assets/img/logo.png 2x" alt="logo" />
           <ul class="module">
-            <li>Về DxTech</li>
-            <li>Sản phẩm</li>
-            <li>Giải pháp</li>
-            <li>Liên hệ</li>
+            <li><a href="">Về DxTech</a></li>
+            <li><a href="">Sản phẩm</a></li>
+            <li><a href="">Giải pháp</a></li>
+            <li><a href="">Liên hệ</a></li>
           </ul>
           <a href="#">
             <div class="dxt-btn">
@@ -53,7 +53,7 @@
               </div>
             </a>
             <a href="#">
-              <div class="dxt-btn">
+              <div class="dxt-btn dxt-btn-noback">
                 <button class="btn">Xem video</button>
               </div>
             </a>
@@ -222,7 +222,7 @@
           <div class="dxt-title text-center">Các sản phẩm của chúng tôi</div>
           <div class="products-part">
             <div class="list-products">
-              <div class="product-click" data-content="ekyc">eKYC</div>
+              <div class="product-click product-active" data-content="ekyc">eKYC</div>
               <div class="product-click" data-content="face-recognition">
                 Nhận diện khuôn mặt
               </div>
@@ -252,7 +252,7 @@
                       </div>
                     </a>
                     <a href="#">
-                      <div class="dxt-btn">
+                      <div class="dxt-btn dxt-btn-noback">
                         <button class="btn">Chi tiết</button>
                       </div>
                     </a>
@@ -317,10 +317,10 @@
       </section>
       <section id="dxt_customers">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center align-items-center">
             <div class="col-lg-6">
               <div class="dxt-pin">Khách Hàng</div>
-              <div class="dxt-title">Họ nói gì về chúng tôi</div>
+              <div class="dxt-title mb-3">Họ nói gì về chúng tôi</div>
               <div class="customer-des">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -421,7 +421,9 @@
       </section>
       <section id="dxt_trial_register">
         <div class="container">
-          <div class="dxt-title" style="margin-bottom: 40px;">Đăng ký trải nghiệm dịch vụ</div>
+          <div class="dxt-title" style="margin-bottom: 40px">
+            Đăng ký trải nghiệm dịch vụ
+          </div>
           <form action="">
             <div class="row gy-4">
               <div class="col-lg-6">
@@ -467,7 +469,10 @@
                   ></textarea>
                 </div>
               </div>
-              <a class="d-flex align-items-center justify-content-center" href="#">
+              <a
+                class="d-flex align-items-center justify-content-center"
+                href="#"
+              >
                 <div class="dxt-btn text-center" style="width: 30%">
                   <button class="btn">Đăng ký</button>
                 </div>
@@ -476,6 +481,74 @@
           </form>
         </div>
       </section>
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-logoes">
+            <img srcset="./assets/img/softdreams-logo.png 2x" alt="" />
+            <div class="verical-line"></div>
+            <img srcset="./assets/img/dxtech-logo.png 2x" alt="" />
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="footer-column">
+                  <div class="column-head">DXTECH - Digitalize Your Success</div>
+                  <div class="column-content">
+                    <ul>
+                      <li><img srcset="./assets/img/footer-adress-icon.png 2x" alt="">Trụ sở: Nhà khách ATS, Số 8 Phạm Hùng, 
+                        Phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội</li>
+                        <li><img srcset="./assets/img/footer-email-icon.png 2x" alt="">Email: contact@dxtech.vn</li>
+                          <li><img srcset="./assets/img/footer-phone-icon.png 2x" alt="">Hotline: 19003369</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-column">
+                <div class="column-head">PRODUCTS</div>
+                <div class="column-content">
+                  <ul>
+                    <li>eKYC</li>
+                    <li>Giám sát</li>
+                    <li>Chấm công khuôn mặt</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer-column">
+                <div class="column-head">ABOUT US</div>
+                <div class="column-content">
+                  <ul>
+                    <li>DxTech</li>
+                    <li>Contact</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer-column">
+                <div class="column-head">MỤC LỤC</div>
+                <div class="column-content">
+                  <ul>
+                    <li>Trang chủ</li>
+                    <li>Sản phẩm</li>
+                    <li>Liên hệ</li>
+                    <li>Tin tức</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="list-social-media">
+            <li><a href=""><img srcset="./assets/img/linkedin.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/twitter.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/insta.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/fb.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/youtube.png 2x" alt=""></a></li>
+            
+          </ul>
+        </div>
+      </footer>
     </div>
 
     <script
