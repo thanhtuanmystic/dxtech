@@ -142,10 +142,10 @@ table {
 
 /* End Reset CSS */
 
-
 #dxt_main_body img {
   max-width: 100%;
 }
+
 
 .dxt-btn {
   padding: 8px 30px;
@@ -169,8 +169,8 @@ table {
 }
 
 .dxt-header {
-  background: url(../img/header-bg.png)
-    lightgray 0px 0.178px / 100% 128.51% no-repeat;
+  background: url(../img/header-bg.png) lightgray 0px 0.178px / 100% 128.51%
+    no-repeat;
   padding: 100px 0;
 }
 .dxt-header .header-top {
@@ -564,7 +564,6 @@ footer .column-content ul li {
   margin-top: 60px;
 }
 
-
 /* responsive */
 
 @media screen and (max-width: 1000px) {
@@ -575,30 +574,50 @@ footer .column-content ul li {
   .navbar-collapse {
     background: #ccc;
     padding: 20px 20px;
-    
   }
   .navbar-collapse a {
   }
-
 }
 
-
 /* Responsive */
-    /*Ipad ngang(1024 x 768)*/
-    @media screen and (max-width: 1024px) {
-      
-  }
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+}
 
-  /*Ipad dọc(768 x 1024)*/
-  @media screen and (max-width: 768px) {
-    .dxt-title {
-      font-size: 24px;
-    }
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+  .dxt-title {
+    font-size: 24px;
   }
+}
 
-  /*Tablet nhỏ(480 x 640)*/
-  @media screen and (max-width: 480px) {
-    .dxt-header .header-content .main-content {
-      padding: 0;
-    }
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+  .dxt-title {
+    font-size: 20px;
   }
+  .dxt-btn {
+    width: 100%;
+  }
+  .dxt-header .header-content .main-content {
+    padding: 0;
+  }
+  .dxt-header .header-content .main-content .slogan {
+    font-size: 40px;
+  }
+  .title-and-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-box {
+    height: auto;
+  }
+  .dxt-btn-box {
+    width: 100% !important;
+    text-align: center;
+  }
+  .dxt-btn-box .dxt-btn {
+    width: 100% !important;
+  }
+}
