@@ -370,9 +370,9 @@ line-height: normal;
   display: flex;
   gap: 20px;
   color: #fff;
-  padding: 20px 0;
   align-items: center;
   justify-content: center;
+  margin: 40px 0;
 }
 .product-btn-part {
   display: flex;
