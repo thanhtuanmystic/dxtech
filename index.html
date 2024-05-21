@@ -15,19 +15,36 @@
   <body>
     <header class="dxt-header">
       <div class="header-top">
-        <div class="container">
-          <img srcset="./assets/img/logo.png 2x" alt="logo" />
-          <ul class="module">
-            <li><a href="">Về DxTech</a></li>
-            <li><a href="">Sản phẩm</a></li>
-            <li><a href="">Giải pháp</a></li>
-            <li><a href="">Liên hệ</a></li>
-          </ul>
-          <a href="#">
-            <div class="dxt-btn">
-              <button class="btn">Đăng nhập</button>
+        <div class="container" style="height: 100%;">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+              <img srcset="./assets/img/logo.png 2x" alt="logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Về DxTech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giải pháp</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+              <a href="#">
+                <div class="dxt-btn">
+                  <button class="btn">Đăng nhập</button>
+                </div>
+              </a>
             </div>
-          </a>
+          </nav>
         </div>
       </div>
       <div class="header-content">
@@ -587,9 +604,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function () {
         $("#ekyc").show();

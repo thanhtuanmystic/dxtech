@@ -142,7 +142,7 @@ table {
 
 /* End Reset CSS */
 
-.dxt-header {
+/* .dxt-header {
   background: url(http://softdreams.vn/wp-content/uploads/2024/05/header-bg.png)
     lightgray 0px 0.178px / 100% 128.51% no-repeat;
     padding: 100px 0;
@@ -175,6 +175,7 @@ font-style: normal;
 font-weight: 800;
 line-height: normal;
 }
+*/
 
 .dxt-btn {
   padding: 8px 30px;
@@ -194,6 +195,41 @@ line-height: normal;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+}
+
+.dxt-header {
+  background: url(http://softdreams.vn/wp-content/uploads/2024/05/header-bg.png)
+    lightgray 0px 0.178px / 100% 128.51% no-repeat;
+  padding: 100px 0;
+}
+.dxt-header .header-top {
+  height: 86px;
+  width: 100%;
+  background: #121736;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+nav {
+  height: 100%;
+  gap: 13%;
+}
+#navbarNav {
+  justify-content: space-between;
+}
+.navbar-nav {
+  display: flex;
+  gap: 60px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -239,7 +275,6 @@ line-height: normal;
   gap: 24px;
 }
 .dxt-header .header-content .partner {
-  
 }
 
 .partner-title {
