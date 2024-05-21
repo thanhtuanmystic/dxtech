@@ -142,40 +142,10 @@ table {
 
 /* End Reset CSS */
 
-/* .dxt-header {
-  background: url(http://softdreams.vn/wp-content/uploads/2024/05/header-bg.png)
-    lightgray 0px 0.178px / 100% 128.51% no-repeat;
-    padding: 100px 0;
+
+#dxt_main_body img {
+  max-width: 100%;
 }
-.dxt-header .header-top {
-  height: 86px;
-  width: 100%;
-  background: #121736;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-}
-.dxt-header .header-top .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.dxt-header ul {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  justify-content: center;
-}
-.dxt-header .header-top ul li, .dxt-header .header-top ul li a {
-  color: #fff;
-  font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-}
-*/
 
 .dxt-btn {
   padding: 8px 30px;
@@ -199,7 +169,7 @@ line-height: normal;
 }
 
 .dxt-header {
-  background: url(http://softdreams.vn/wp-content/uploads/2024/05/header-bg.png)
+  background: url(../img/header-bg.png)
     lightgray 0px 0.178px / 100% 128.51% no-repeat;
   padding: 100px 0;
 }
@@ -239,8 +209,8 @@ nav {
   text-align: center;
 }
 
-.dxt-header .header-content .main-content {
-  padding: 0 100px;
+.dxt-header .header-content .main-content .container {
+  /* padding: 0 100px; */
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -292,6 +262,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 24px;
+  flex-wrap: wrap;
 }
 #dxt_main_body {
   background-image: url(../img/main_background.png);
@@ -408,6 +379,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 40px 0;
+  flex-wrap: wrap;
 }
 .product-btn-part {
   display: flex;
@@ -553,6 +525,7 @@ textarea::placeholder {
 .footer-logoes {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 footer .verical-line {
   border-left: 1px solid #fff;
@@ -592,8 +565,6 @@ footer .column-content ul li {
 }
 
 
-
-
 /* responsive */
 
 @media screen and (max-width: 1000px) {
@@ -610,3 +581,24 @@ footer .column-content ul li {
   }
 
 }
+
+
+/* Responsive */
+    /*Ipad ngang(1024 x 768)*/
+    @media screen and (max-width: 1024px) {
+      
+  }
+
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    .dxt-title {
+      font-size: 24px;
+    }
+  }
+
+  /*Tablet nhỏ(480 x 640)*/
+  @media screen and (max-width: 480px) {
+    .dxt-header .header-content .main-content {
+      padding: 0;
+    }
+  }
