@@ -219,10 +219,12 @@ nav {
 .nav-item {
   position: relative;
 }
-.nav-item:hover .nav-link, .nav-item:active .nav-link {
+.nav-item:hover .nav-link,
+.nav-item:active .nav-link {
   color: #bab8ff;
 }
-.nav-item:hover .submenu, .nav-item:active .submenu {
+.nav-item:hover .submenu,
+.nav-item:active .submenu {
   display: block;
 }
 .submenu {
@@ -247,7 +249,8 @@ nav {
 .submenu li a {
   color: inherit;
 }
-.submenu li:hover, .submenu li:active {
+.submenu li:hover,
+.submenu li:active {
   color: #bab8ff;
   cursor: pointer;
 }
@@ -270,13 +273,12 @@ a.lineeffect:after {
   width: 100%;
   height: 3px;
   background: #fff;
-  transition: left .8s;
+  transition: left 0.8s;
 }
 
 a.lineeffect:hover:after {
   left: 0;
 }
-
 
 .dxt-header .header-content {
   padding-top: 100px;
@@ -641,7 +643,7 @@ footer .column-content ul li {
 
 /* responsive */
 /* Màn hình to */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1550px) {
   .dxt-header {
     height: 100vh;
   }
@@ -772,4 +774,29 @@ footer .column-content ul li {
 }
 .btnn.hover-filled-slide-right:hover::before {
   width: 0%;
+}
+
+/*  */
+
+.slide-bottom-to-show {
+  animation: slide-bottom-to-show 1s linear forwards;
+  -webkit-animation: slide-bottom-to-show 1s linear forwards;
+}
+@keyframes slide-bottom-to-show {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+    -webkit-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    -o-transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
 }
