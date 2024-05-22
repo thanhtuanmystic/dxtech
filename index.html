@@ -682,13 +682,14 @@
 
       $(document).ready(function () {
         var backgroundImage = new Image();
-        backgroundImage.src = "http://softdreams.vn/wp-content/uploads/2024/05/main_background2.png";
+        backgroundImage.src =
+          "http://softdreams.vn/wp-content/uploads/2024/05/main_background3.png";
 
         $(backgroundImage).on("load", function () {
           $("#loading").fadeOut("slow", function () {
             $("#dxt_main_body").fadeIn("slow");
-              $('body').css('overflow', 'auto');
-
+            $("header").fadeIn("slow");
+            $("body").css("overflow", "auto");
           });
         });
       });
