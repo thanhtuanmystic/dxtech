@@ -146,7 +146,6 @@ table {
   max-width: 100%;
 }
 
-
 .dxt-btn {
   padding: 8px 30px;
   border-radius: 8px;
@@ -159,6 +158,20 @@ table {
   background: transparent;
   border: 1px solid #fff;
 }
+.dxt-btn-noback:hover {
+  border: 1px solid var(--Logo-Red, #811643);
+  background-color: #fff;
+}
+.dxt-btn-noback:hover button {
+  background: var(
+    --Logo-Red,
+    linear-gradient(90deg, #811643 0%, #ec2224 99.99%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s 0.1s;
+}
 .dxt-btn button {
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -166,6 +179,8 @@ table {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: none;
+  background-color: transparent;
 }
 
 .dxt-header {
@@ -602,6 +617,9 @@ footer .column-content ul li {
   .dxt-header .header-content .main-content {
     padding: 0;
   }
+  .dxt-header .header-content {
+    padding-top: 20px;
+  }
   .dxt-header .header-content .main-content .slogan {
     font-size: 40px;
   }
@@ -620,4 +638,66 @@ footer .column-content ul li {
   .dxt-btn-box .dxt-btn {
     width: 100% !important;
   }
+  .dxt-pin {
+    width: 100%;
+  }
+}
+
+/* Hover BTN */
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btnn {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  cursor: pointer;
+}
+.btnn span {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  padding: 6px 12px;
+}
+
+.dxt-btn::before {
+  background: var(
+    --Logo-Red,
+    linear-gradient(90deg, #811643 0%, #ec2224 99.99%)
+  );
+  transition: 0.3s ease-out;
+}
+
+.dxt-btn span {
+  transition: 0.2s 0.1s;
+}
+.dxt-btn:hover span {
+  background: var(
+    --Logo-Red,
+    linear-gradient(90deg, #811643 0%, #ec2224 99.99%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s 0.1s;
+}
+
+/* 4. hover-filled-slide-right */
+.btnn.hover-filled-slide-right::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.btnn.hover-filled-slide-right:hover::before {
+  width: 0%;
 }
