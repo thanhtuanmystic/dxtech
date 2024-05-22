@@ -640,6 +640,18 @@ footer .column-content ul li {
 }
 
 /* responsive */
+/* Màn hình to */
+@media screen and (min-width: 1400px) {
+  .dxt-header {
+    height: 100vh;
+  }
+  .dxt-header .header-content .main-content .container {
+    gap: 50px;
+  }
+  .tech-box {
+    height: 550px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .navbar {
