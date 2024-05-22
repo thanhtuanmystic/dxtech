@@ -13,14 +13,10 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <style>
-      .eclipse {
-        position: absolute;
-        left: 0;
-        top: 20%;
-      }
-    </style>
-    <header class="dxt-header">
+    <div id="loading">
+      <div class="spinner"></div>
+  </div>
+   <header class="dxt-header">
       <div class="header-top">
         <div class="container" style="height: 100%">
           <nav class="navbar navbar-expand-lg navbar-dark">
@@ -113,7 +109,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> 
     <div id="dxt_main_body">
       <section id="dxt_about">
         <div class="container">
@@ -639,11 +635,21 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+// script.js
+$(window).on('load', function() {
+    $('#loading').fadeOut('slow', function() {
+        $('#dxt_main_body').fadeIn('slow');
+        // Bỏ khóa cuộn trang
+        $('body').css('overflow', 'auto');
+    });
+});
+    </script>
     <script>
       $(document).ready(function () {
         $("#ekyc").show();
