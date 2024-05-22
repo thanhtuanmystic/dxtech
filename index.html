@@ -15,8 +15,8 @@
   <body>
     <div id="loading">
       <div class="spinner"></div>
-  </div>
-   <header class="dxt-header">
+    </div>
+    <header class="dxt-header">
       <div class="header-top">
         <div class="container" style="height: 100%">
           <nav class="navbar navbar-expand-lg navbar-dark">
@@ -43,7 +43,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Về DxTech</a>
                 </li>
-                
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">Sản phẩm</a>
                   <ul class="submenu">
@@ -109,7 +109,7 @@
           </div>
         </div>
       </div>
-    </header> 
+    </header>
     <div id="dxt_main_body">
       <section id="dxt_about">
         <div class="container">
@@ -206,7 +206,9 @@
         <div class="container">
           <div class="dxt-pin">Công nghệ 4.0</div>
           <div class="title-and-button">
-            <div class="dxt-title animation_slide_bottom_to_show">Ứng dụng AI vào số hóa doanh nghiệp</div>
+            <div class="dxt-title animation_slide_bottom_to_show">
+              Ứng dụng AI vào số hóa doanh nghiệp
+            </div>
             <a href="#">
               <div class="dxt-btn btnn hover-filled-slide-right">
                 <button class=""><span>Liên hệ</span></button>
@@ -223,7 +225,11 @@
                   standard dummy text
                 </div>
                 <div class="tech-box-img">
-                  <img loading="lazy" srcset="./assets/img/tech-icon1.png 2x" alt="" />
+                  <img
+                    loading="lazy"
+                    srcset="./assets/img/tech-icon1.png 2x"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -236,7 +242,11 @@
                   standard dummy text
                 </div>
                 <div class="tech-box-img">
-                  <img loading="lazy" srcset="./assets/img/tech-icon2.png 2x" alt="" />
+                  <img
+                    loading="lazy"
+                    srcset="./assets/img/tech-icon2.png 2x"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -249,7 +259,11 @@
                   standard dummy text
                 </div>
                 <div class="tech-box-img">
-                  <img loading="lazy" srcset="./assets/img/tech-icon3.png 2x" alt="" />
+                  <img
+                    loading="lazy"
+                    srcset="./assets/img/tech-icon3.png 2x"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -259,7 +273,10 @@
       <section id="dxt_products">
         <div class="container">
           <div class="dxt-pin" style="margin: 0 auto">Sản phẩm</div>
-          <div class="dxt-title text-center animation_slide_bottom_to_show" style="margin-top: 12px">
+          <div
+            class="dxt-title text-center animation_slide_bottom_to_show"
+            style="margin-top: 12px"
+          >
             Các sản phẩm của chúng tôi
           </div>
           <div class="products-part">
@@ -274,7 +291,10 @@
                 Nhận diện hành vi
               </div>
             </div>
-            <div id="ekyc" class="product-content animation_slide_bottom_to_show">
+            <div
+              id="ekyc"
+              class="product-content animation_slide_bottom_to_show"
+            >
               <div
                 class="row gy-5 d-flex justify-content-center align-items-center"
               >
@@ -305,11 +325,18 @@
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <img loading="lazy" srcset="./assets/img/product-img-1.png 2x" alt="" />
+                  <img
+                    loading="lazy"
+                    srcset="./assets/img/product-img-1.png 2x"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div id="face-recognition" class="product-content animation_slide_bottom_to_show">
+            <div
+              id="face-recognition"
+              class="product-content animation_slide_bottom_to_show"
+            >
               <div
                 class="row gy-5 d-flex justify-content-center align-items-center"
               >
@@ -334,11 +361,18 @@
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <img loading="lazy" srcset="./assets/img/product-img-1.png 2x" alt="" />
+                  <img
+                    loading="lazy"
+                    srcset="./assets/img/product-img-1.png 2x"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div id="behavior-recognition" class="product-content animation_slide_bottom_to_show">
+            <div
+              id="behavior-recognition"
+              class="product-content animation_slide_bottom_to_show"
+            >
               <div
                 class="row gy-5 d-flex justify-content-center align-items-center"
               >
@@ -358,7 +392,11 @@
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <img loading="lazy" srcset="./assets/img/product-img-1.png 2x" alt="" />
+                  <img
+                    loading="lazy"
+                    srcset="./assets/img/product-img-1.png 2x"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -640,15 +678,28 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+      // script.js
 
-// script.js
-$(window).on('load', function() {
-    $('#loading').fadeOut('slow', function() {
-        $('#dxt_main_body').fadeIn('slow');
-        // Bỏ khóa cuộn trang
-        $('body').css('overflow', 'auto');
-    });
-});
+      $(document).ready(function () {
+        var backgroundImage = new Image();
+        backgroundImage.src = "http://softdreams.vn/wp-content/uploads/2024/05/main_background2.png";
+
+        $(backgroundImage).on("load", function () {
+          $("#loading").fadeOut("slow", function () {
+            $("#dxt_main_body").fadeIn("slow");
+              $('body').css('overflow', 'auto');
+
+          });
+        });
+      });
+
+      // $(window).on('load', function() {
+      //     $('#loading').fadeOut('slow', function() {
+      //         $('#dxt_main_body').fadeIn('slow');
+      //         // Bỏ khóa cuộn trang
+      //         $('body').css('overflow', 'auto');
+      //     });
+      // });
     </script>
     <script>
       $(document).ready(function () {
