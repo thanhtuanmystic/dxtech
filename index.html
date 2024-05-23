@@ -10,8 +10,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="prefetch" href="./assets/img/main_background2.png">
-
+    <link rel="prefetch" href="./assets/img/main_background3.png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -681,25 +680,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
       // script.js
-      $(document).ready(function () {
-        var backgroundImage = new Image();
-        backgroundImage.src =
-          "./assets/img/main_background2.png";
-        $(backgroundImage).on("load", function () {
-          $("#loading").fadeOut("slow", function () {
-            $("#dxt_main_body").fadeIn("slow");
-            $("header").fadeIn("slow");
-            $("body").css("overflow", "auto");
-          });
+      // $(document).ready(function () {
+      //   var backgroundImage = new Image();
+      //   backgroundImage.src = "./assets/img/main_background3.png";
+      //   $(backgroundImage).on("load", function () {
+      //     $("#loading").fadeOut("slow", function () {
+      //       $("#dxt_main_body").fadeIn("slow");
+      //       $("header").fadeIn("slow");
+      //       $("body").css("overflow", "auto");
+      //     });
+      //   });
+      // });
+      $(window).on("load", function () {
+        $("#loading").fadeOut("slow", function () {
+          $("#dxt_main_body").fadeIn("slow");
+          // Bỏ khóa cuộn trang
+          $("body").css("overflow", "auto");
         });
       });
-      // $(window).on('load', function() {
-      //     $('#loading').fadeOut('slow', function() {
-      //         $('#dxt_main_body').fadeIn('slow');
-      //         // Bỏ khóa cuộn trang
-      //         $('body').css('overflow', 'auto');
-      //     });
-      // });
     </script>
     <script>
       $(document).ready(function () {
