@@ -679,11 +679,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
       // script.js
-
       $(document).ready(function () {
         var backgroundImage = new Image();
         backgroundImage.src =
-          "http://softdreams.vn/wp-content/uploads/2024/05/main_background3.png";
+          "./assets/img/main_background2.png";
 
         $(backgroundImage).on("load", function () {
           $("#loading").fadeOut("slow", function () {
@@ -693,7 +692,6 @@
           });
         });
       });
-
       // $(window).on('load', function() {
       //     $('#loading').fadeOut('slow', function() {
       //         $('#dxt_main_body').fadeIn('slow');
