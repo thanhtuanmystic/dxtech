@@ -382,6 +382,8 @@ a.lineeffect:hover:after {
   background-image: url(../img/main_background3.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #dxt_about {
