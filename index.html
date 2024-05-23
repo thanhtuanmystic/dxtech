@@ -675,52 +675,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-      // script.js
-      // $(document).ready(function () {
-      //   var backgroundImage = new Image();
-      //   backgroundImage.src = "./assets/img/main_background3.png";
-      //   $(backgroundImage).on("load", function () {
-      //     $("#loading").fadeOut("slow", function () {
-      //       $("#dxt_main_body").fadeIn("slow");
-      //       $("header").fadeIn("slow");
-      //       $("body").css("overflow", "auto");
-      //     });
-      //   });
-      // });
-      $(window).on("load", function () {
-        $("#loading").fadeOut("slow", function () {
-          $("#dxt_main_body").fadeIn("slow");
-          // Bỏ khóa cuộn trang
-          $("body").css("overflow", "auto");
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#ekyc").show();
-        $(".product-click").click(function () {
-          $(".product-click").removeClass("product-active");
-          $(this).addClass("product-active");
-          var contentId = $(this).data("content");
-          $(".product-content").hide();
-          $("#" + contentId).show();
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#nextBtn").click(function () {
-          $("#feedbackCarousel").carousel("next");
-        });
-
-        $("#prevBtn").click(function () {
-          $("#feedbackCarousel").carousel("prev");
-        });
-      });
-    </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
