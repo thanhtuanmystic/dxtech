@@ -96,11 +96,11 @@
     </header>
 
     <div class="main">
-      <img
+      <!-- <img
         class="img-homebackground"
         src="./assets/img/homepage-background.png"
         alt=""
-      />
+      /> -->
       <section id="dxt_produce">
         <div class="container">
           <div class="dxt-pin">DXTech</div>
@@ -257,10 +257,62 @@
           </div>
         </div>
       </section>
+
       <section id="dxt_our_product">
         <div class="container">
           <div class="dxt-title text-center mb40">
             Các sản phẩm của chúng tôi
+          </div>
+          <div>
+            <div class="list-solution">
+              <div
+                class="solution-click solution-active"
+                data-content="solution1"
+              >
+                <h3>eKYC</h3>
+              </div>
+              <div class="solution-click" data-content="solution2">
+                <h3>Nhận diện khuôn mặt</h3>
+              </div>
+              <div class="solution-click" data-content="solution3">
+                <h3>Nhận diện hành vi</h3>
+              </div>
+            </div>
+            <div id="solution1" class="solution-content">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6">
+                  <div class="text-default">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <div class="list-btn">
+                    <a href="#" class="dxt-primary-btn">
+                      <div>Liên hệ</div>
+                    </a>
+                    <a href="#" class="dxt-second-btn">
+                      <div>Chi tiết</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <img srcset="./assets/img/product-img1.png 2x" alt="" />
+                </div>
+              </div>
+            </div>
+            <div id="solution2" class="solution-content">
+              <h1>Solution 2</h1>
+            </div>
+            <div id="solution3" class="solution-content">
+              <h1>Solution 3</h1>
+            </div>
           </div>
         </div>
       </section>
@@ -282,19 +334,21 @@
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
               </div>
+
+              <div class="carousel-indicators">
+                <span class="indicator active" data-slide-to="0"></span>
+                <span class="indicator" data-slide-to="1"></span>
+                <span class="indicator" data-slide-to="2"></span>
+              </div>
               <div class="arrow-part">
                 <img
                   id="prevBtn"
-                  srcset="
-                    https://easyhrm.vn/wp-content/uploads/2024/06/arrow-left.png 2x
-                  "
+                  srcset="./assets/img/arrow-left.png 2x"
                   alt=""
                 />
                 <img
                   id="nextBtn"
-                  srcset="
-                    https://easyhrm.vn/wp-content/uploads/2024/06/arrow-right.png 2x
-                  "
+                  srcset="./assets/img/arrow-right.png 2x"
                   alt=""
                 />
               </div>
@@ -318,12 +372,129 @@
                       alt=""
                     />
                   </div>
+                  <div class="carousel-item">
+                    <img
+                      srcset="./assets/img/feedback-test-img.png 2x"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="dxt_form_register">
+        <div class="form-box">
+          <div class="container">
+            <form action="">
+              <div class="title">
+                Bạn muốn hiểu hơn về các sản phẩm và giải pháp của DXTECH? Đăng
+                ký trải nghiệm dịch vụ
+              </div>
+              <div class="form-row">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      placeholder="Tên cá nhân, công ty"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      placeholder="Số điện thoại"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="form-row">
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="Nhu cầu mong muốn"
+                  cols="30"
+                  rows="2"
+                ></textarea>
+              </div>
+              <div class="form-btn">
+                <button class="dxt-primary-btn">Đăng ký</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer-logoes">
+            <img srcset="./assets/img/footer-sdslogo.png 2x" alt="" />
+            <img srcset="./assets/img/footer-dxtlogo.png 2x" alt="" />
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="col-title">DXTECH - Digitalize Your Success</div>
+              <ul class="footer-col-content">
+                <li>
+                  <img
+                    srcset="./assets/img/footer-position-icon.png 2x"
+                    alt=""
+                  />Trụ sở: Nhà khách ATS, Số 8 Phạm Hùng, Phường Mễ Trì, Quận
+                  Nam Từ Liêm, Hà Nội
+                </li>
+                <li>
+                  <img
+                    srcset="./assets/img/footer-mail-icon.png 2x"
+                    alt=""
+                  />Email: contact@dxtech.vn
+                </li>
+                <li>
+                  <img
+                    srcset="./assets/img/footer-phone-icon.png 2x"
+                    alt=""
+                  />Hotline: 19003369
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <div class="col-title">PRODUCTS</div>
+              <ul class="footer-col-content">
+                <li>eKYC</li>
+                <li>Giám sát</li>
+                <li>Chấm công khuôn mặt</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <div class="col-title">ABOUT US</div>
+              <ul class="footer-col-content">
+                <li>DXTech</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <div class="col-title">MỤC LỤC</div>
+              <ul class="footer-col-content">
+                <li>Trang chủ</li>
+                <li>Sản phẩm</li>
+                <li>Liên hệ</li>
+                <li>Tin tức</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="list-social-media">
+            <li><a href=""><img srcset="./assets/img/linkedin-icon.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/xicon.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/ig-icon.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/fb-icon.png 2x" alt=""></a></li>
+            <li><a href=""><img srcset="./assets/img/youtube-icon.png 2x" alt=""></a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
