@@ -9,6 +9,11 @@
   font-family: SVN-Gilroy;
   src: url(../font/FontGilroyVHFull/SVN-Gilroy\ Regular.otf);
 }
+:root {
+  --bs-font-monospace: inherit;
+  --bs-font-sans-serif: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -427,7 +432,7 @@ header .container .header-partner {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 header .container .header-partner .title {
   color: var(--Backgrounds-Primary, #fff);
@@ -435,14 +440,19 @@ header .container .header-partner .title {
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 36px */
+  margin-bottom: 2.4rem;
 }
 header .container .header-partner .list-partner {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main {
   background-image: url(../img/homepage-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 .main section {
@@ -534,7 +544,7 @@ header .container .header-partner .list-partner {
 }
 .main #dxt_our_product .list-solution .solution-click {
   display: flex;
-  height: 50px;
+  height: 5rem;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
@@ -542,7 +552,7 @@ header .container .header-partner .list-partner {
   border-radius: 25px;
   border: 1px solid var(--Backgrounds-Primary, #fff);
   color: var(--Backgrounds-Primary, #fff);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -575,7 +585,6 @@ header .container .header-partner .list-partner {
 }
 .main #dxt_feedback .feedback-des {
   display: -webkit-box;
-  width: 521px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
@@ -716,5 +725,184 @@ header .container .header-partner .list-partner {
   gap: 2.4rem;
   align-items: center;
 }
+
+/* Responsive */
+/*Màn to(>1600px)*/
+/*Laptop thông thường */
+@media screen and (max-width: 1400px) {
+  header {
+    height: auto;
+    padding: 5rem 0;
+  }
+  header .container .slogan {
+    font-size: 4rem;
+  }
+  header .container .header-partner {
+    margin-top: 6rem;
+  }
+  .dxt-title-row .dxt-title {
+    width: 70%;
+  }
+  .dxt-title {
+    font-size: 2.4rem;
+  }
+  .dxt-title-row .dxt-primary-btn {
+    width: auto;
+  }
+  .main #dxt_our_product .solution-content .list-btn a {
+    width: auto;
+  }
+  .main .dxt_form_register .form-box form .title {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav .navbar .links li a {
+    font-size: 1.4rem;
+  }
+  .login-header .dxt-primary-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+  .dxt-title {
+    font-size: 2rem;
+  }
+  .main #dxt_produce .produce-box .produce-name,
+  .main #dxt_tech .tech-box .tech-name {
+    font-size: 2rem;
+  }
+  .main #dxt_our_product .list-solution .solution-click {
+    height: auto;
+  }
+  .main .dxt_form_register .form-box form .title {
+    font-size: 2rem;
+  }
+  .main .dxt_form_register .form-box {
+    padding: 2rem 3rem;
+  }
+  .main .dxt_form_register .form-box form .form-btn button {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  header .container .slogan {
+    font-size: 3rem;
+  }
+  header .container .header-partner .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main .dxt_form_register .form-box form .form-row {
+    margin-bottom: 2rem;
+  }
+  .main .dxt_form_register .form-box form .form-row .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main .dxt_form_register .form-box {
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+  }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+  header .container .slogan {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  header .container .slogan-sub {
+    text-align: justify;
+    font-size: 1.4rem;
+  }
+  header .container .list-btn {
+    gap: 1rem;
+  }
+  header .container .list-btn a {
+    padding: 0.6rem 5%;
+  }
+  header .container .header-partner {
+    margin-top: 4rem;
+  }
+  .dxt-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .dxt-title-row .dxt-title {
+    width: 100%;
+  }
+  .dxt-title-row .dxt-primary-btn {
+    padding: 0.6rem 5%;
+  }
+  .main #dxt_our_product .list-solution {
+    gap: 1rem;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .main #dxt_our_product .solution-content .list-btn {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 600px) {
+  .main #dxt_produce,
+  .main #dxt_tech,
+  .main #dxt_our_product,
+  .main #dxt_feedback,
+  .main #dxt_form_register {
+    padding: 2rem 0;
+  }
+  header {
+    padding: 3rem 0;
+  }
+  header .container .slogan-sub {
+    margin-bottom: 2rem;
+  }
+  header .container .header-partner {
+    margin-top: 2rem;
+  }
+  .main .dxt_form_register {
+    padding: 2rem 1rem;
+  }
+  header .container .header-partner .list-partner {
+    gap: 0;
+  }
+  .dxt-title {
+    font-size: 1.8rem;
+  }
+  .dxt-title-row {
+    align-items: center;
+  }
+  .dxt-title-row .dxt-title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .dxt-pin {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem;
+  }
+  .main footer .footer-logoes {
+    gap: 0;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  .main footer .footer-col-content li {
+    font-size: 1.6rem;
+  }
+  .main footer .footer-col-content {
+    gap: 1rem;
+  }
+  .main footer .col-title {
+    margin-bottom: 1rem;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
 
 /*# sourceMappingURL=style.css.map */
