@@ -18,7 +18,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-$section_padding: 5rem 0;
+$section_padding: 10rem 0;
 html {
   font-size: 62.5%;
   font-family: "Open Sans";
@@ -56,7 +56,7 @@ nav {
 }
 nav .navbar {
   height: 100%;
-  max-width: 125rem;
+  max-width: 140rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -494,7 +494,6 @@ header {
     }
   }
   #dxt_tech {
-    padding: $section_padding;
     .tech-box {
       display: flex;
       padding: 2.4rem;
@@ -541,13 +540,14 @@ header {
     padding: $section_padding;
     .list-solution {
       display: flex;
-      gap: 3rem;
+      gap: 2.4rem;
       justify-content: center;
       align-items: center;
       margin-bottom: 4rem;
       .solution-click {
         display: flex;
         height: 5rem;
+        min-width: 20rem;
         padding: 0.8rem 2.4rem;
         justify-content: center;
         align-items: center;

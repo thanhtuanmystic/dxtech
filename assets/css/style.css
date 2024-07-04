@@ -61,7 +61,7 @@ nav {
 
 nav .navbar {
   height: 100%;
-  max-width: 125rem;
+  max-width: 140rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -475,7 +475,7 @@ header .container .header-partner .list-partner {
   top: 0;
 }
 .main #dxt_produce {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 .main #dxt_produce .produce-box {
   display: flex;
@@ -506,9 +506,6 @@ header .container .header-partner .list-partner {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
-}
-.main #dxt_tech {
-  padding: 5rem 0;
 }
 .main #dxt_tech .tech-box {
   display: flex;
@@ -552,11 +549,11 @@ header .container .header-partner .list-partner {
   margin-top: auto;
 }
 .main #dxt_our_product {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 .main #dxt_our_product .list-solution {
   display: flex;
-  gap: 3rem;
+  gap: 2.4rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
@@ -564,6 +561,7 @@ header .container .header-partner .list-partner {
 .main #dxt_our_product .list-solution .solution-click {
   display: flex;
   height: 5rem;
+  min-width: 20rem;
   padding: 0.8rem 2.4rem;
   justify-content: center;
   align-items: center;
@@ -597,7 +595,7 @@ header .container .header-partner .list-partner {
   width: 19rem;
 }
 .main #dxt_feedback {
-  padding: 5rem 0;
+  padding: 10rem 0;
   border-top: 1px solid var(--Backgrounds-Primary, #fff);
   border-bottom: 1px solid var(--Backgrounds-Primary, #fff);
   background: rgba(207, 212, 255, 0.1);
@@ -744,7 +742,7 @@ header .container .header-partner .list-partner {
   background-image: url(../img/footer-background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 .main footer img {
   max-width: 100%;
