@@ -291,39 +291,126 @@ nav .navbar .links li:hover .js-sub-menu {
   }
 }
 
-// Button chung
+// Button chung + Hover effect
+// Primary btn
 .dxt-primary-btn {
-  display: flex;
-  padding: 1.2rem 3.2rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
   background: var(
     --Logo-Red,
     linear-gradient(90deg, #811643 0%, #ec2224 99.99%)
   );
-  color: var(--Backgrounds-Primary, #fff);
-  font-size: 1.8rem;
-  font-weight: 700;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  &::before {
+    background: #fff;
+    transition: 0.3s ease-out;
+    border-radius: 0.8rem;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    position: absolute;
+    content: "";
+  }
+  div {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1.2rem 3.2rem;
+    color: #fff;
+    transition: 0.2s;
+    text-align: center;
+    border-radius: 0.8rem;
+    &:hover {
+      outline: 0 !important;
+      outline-offset: 0;
+      background: var(
+        --Logo-Red,
+        linear-gradient(90deg, #811643 0%, #ec2224 99.99%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.2s 0.1s;
+      border-radius: 0.8rem;
+    }
+  }
 }
+.dxt-primary-btn.hover-slide-right::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+}
+.dxt-primary-btn.hover-slide-right:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+}
+
 .dxt-second-btn {
-  display: flex;
-  padding: 1.2rem 3rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
   border: 1px solid #fff;
-  color: var(--Backgrounds-Primary, #fff);
-  font-size: 1.8rem;
-  font-weight: 700;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  &::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    transition: 0.3s ease-out;
+    border-radius: 0.8rem;
+  }
+  div {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1.2rem 3rem;
+    color: #fff;
+    transition: 0.2s;
+    text-align: center;
+    border-radius: 0.8rem;
+    &:hover {
+      outline: 0 !important;
+      outline-offset: 0;
+      border-radius: 0.8rem;
+      span {
+        background: var(
+          --Logo-Red,
+          linear-gradient(90deg, #811643 0%, #ec2224 99.99%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.2s 0.1s;
+      }
+    }
+  }
+}
+.dxt-second-btn.hover-slide-right::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+}
+.dxt-second-btn.hover-slide-right:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
 }
 // mb40
 .mb40 {
@@ -796,7 +883,7 @@ footer {
 
 // Sản phẩm: Ekyc
 
-// CSS Chung cho phân hệ sản phẩm
+// CSS chung cho phân hệ sản phẩm
 
 .product-slogan {
   color: var(--Backgrounds-Primary, #fff);
@@ -879,7 +966,7 @@ footer {
         /* Inner */
         box-shadow: -8px -8px 16px 0px rgba(101, 126, 255, 0.15) inset,
           8px 8px 16px 0px rgba(101, 126, 255, 0.2) inset;
-          height: 100%;
+        height: 100%;
         img {
           margin-bottom: 3rem;
         }
@@ -986,6 +1073,113 @@ footer {
   }
 }
 
+// CSS chung phân hệ giải pháp
+.solution-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  &-heading {
+    font-family: SVN-Gilroy;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &-sub-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+  }
+}
+.banking-bg {
+  background-image: url(../img/giaiphap/banking-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65rem;
+}
+.solution-body {
+  background-image: url(../img/giaiphap/solution-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  header {
+    background: none;
+    height: auto;
+  }
+  #banking_overall {
+    padding: 10rem 0;
+    .overall-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+    }
+    .overall-side {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+      margin-top: 10%;
+    }
+    .overall-box {
+      border-radius: 20px;
+      background: linear-gradient(
+        180deg,
+        rgba(207, 212, 255, 0.35) 0%,
+        rgba(207, 212, 255, 0) 100%
+      );
+      padding: 2.4rem;
+      .overall-name {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+        margin-bottom: 1.2rem;
+      }
+      .overall-des {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        margin-top: 2.4rem;
+      }
+    }
+  }
+  #customer_mornitoring {
+    padding-bottom: 10rem;
+    .title {
+      font-family: SVN-Gilroy;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    .customer-mornitoring-box {
+      display: flex;
+      padding: 32px 24px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 20px;
+      border: 2px solid var(--Gradient-Purple, #282663);
+      background: linear-gradient(
+        180deg,
+        rgba(207, 212, 255, 0.35) 0%,
+        rgba(207, 212, 255, 0) 100%
+      );
+      .customer-mornitoring-name {
+        text-align: center;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+      }
+    }
+  }
+}
+
 /* Responsive */
 
 /*Màn to(>1600px)*/
@@ -1027,8 +1221,8 @@ footer {
   nav .navbar .links li a {
     font-size: 1.4rem;
   }
-  .login-header .dxt-primary-btn {
-    padding: 0.5rem 1rem;
+  .login-header .dxt-primary-btn div {
+    padding: 0.8rem;
     font-size: 1.6rem;
   }
   .dxt-title {
@@ -1049,7 +1243,7 @@ footer {
   }
   .dxt_form_register .form-box form .form-btn button {
     width: 100%;
-    padding: 1rem 0;
+    padding: 0;
   }
   .product-slogan {
     font-size: 3rem;
@@ -1129,9 +1323,6 @@ footer {
   }
   header .container .list-btn {
     gap: 1rem;
-    a {
-      padding: 0.6rem 5%;
-    }
   }
   header .container .header-partner {
     margin-top: 4rem;
@@ -1144,8 +1335,7 @@ footer {
   .dxt-title-row .dxt-title {
     width: 100%;
   }
-  .dxt-title-row .dxt-primary-btn {
-    padding: 0.6rem 5%;
+  .dxt-title-row .dxt-primary-btn div {
   }
   .main #dxt_our_product .list-solution {
     gap: 1rem;
@@ -1251,8 +1441,7 @@ footer {
   .product-body #product_benefit .middle-col {
     gap: 1.5rem;
   }
-  .product-body #product_benefit .bm-benefit .bm-benefit-box 
-  {
+  .product-body #product_benefit .bm-benefit .bm-benefit-box {
     img {
       margin-bottom: 1rem;
     }
