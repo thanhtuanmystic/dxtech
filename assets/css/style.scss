@@ -821,7 +821,13 @@ footer {
   -webkit-line-clamp: 2;
   align-self: stretch;
 }
-
+.app-des {
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
 .product-body {
   header {
     background: none;
@@ -855,7 +861,7 @@ footer {
       /* Inner */
       box-shadow: -8px -8px 16px 0px rgba(101, 126, 255, 0.15) inset,
         8px 8px 16px 0px rgba(101, 126, 255, 0.2) inset;
-      .benefit-des {
+      .benefit-name {
         color: var(--Backgrounds-Primary, #fff);
         text-align: center;
         font-size: 2rem;
@@ -864,15 +870,39 @@ footer {
         line-height: 150%; /* 30px */
       }
     }
+    .bm-benefit {
+      .bm-benefit-box {
+        padding: 2.4rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background: var(--Main-Background, rgba(207, 212, 255, 0.1));
+        /* Inner */
+        box-shadow: -8px -8px 16px 0px rgba(101, 126, 255, 0.15) inset,
+          8px 8px 16px 0px rgba(101, 126, 255, 0.2) inset;
+          height: 100%;
+        img {
+          margin-bottom: 3rem;
+        }
+        .bm-benefit-name {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1.2rem;
+        }
+        .bm-benefit-des {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
   }
   #product_app {
     padding-bottom: 10rem;
-    .list-app {
+    .ekyc-app {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       align-items: stretch;
-      .app-box {
+      .ekyc-app-box {
         display: flex;
         width: 18%;
         padding: 3.2rem 2.4rem;
@@ -891,6 +921,23 @@ footer {
         font-style: normal;
         font-weight: 700;
         line-height: 150%;
+      }
+    }
+    .faceid-app {
+      .faceid-app-box {
+        display: flex;
+        height: 100%;
+        padding: 3.2rem 2.4rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: var(--Main-Background, rgba(207, 212, 255, 0.1));
+
+        /* Inner */
+        box-shadow: -8px -8px 16px 0px rgba(101, 126, 255, 0.15) inset,
+          8px 8px 16px 0px rgba(101, 126, 255, 0.2) inset;
       }
     }
   }
@@ -1007,15 +1054,21 @@ footer {
   .product-slogan {
     font-size: 3rem;
   }
-  .product-body #product_benefit .benefit-box .benefit-des,
+  .app-des {
+    font-size: 1.6rem;
+  }
+  .product-body #product_benefit .benefit-box .benefit-name,
   .product-body #product_app .app-des {
     font-size: 1.6rem;
   }
-  .product-body #product_app .app-box {
+  .product-body #product_app .ekyc-app-box {
     padding: 3rem 1.6rem !important;
   }
   .product-body #product_featured .featured-row .featured-info .featured-name {
     font-size: 2rem;
+  }
+  .product-body #product_benefit .bm-benefit .bm-benefit-box {
+    padding: 1.4rem;
   }
 }
 
@@ -1056,13 +1109,12 @@ footer {
       padding-bottom: 5rem;
     }
   }
-  .product-body #product_app .list-app {
+  .product-body #product_app .ekyc-app {
     gap: 2rem;
-    .app-box {
+    .ekyc-app-box {
       width: 48%;
     }
   }
-
 }
 
 /*Ipad dọc(768 x 1024)*/
@@ -1106,7 +1158,6 @@ footer {
   }
 }
 
-/*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 600px) {
   .main {
     #dxt_produce,
@@ -1162,7 +1213,7 @@ footer {
     margin-bottom: 1rem;
   }
 
-  .product-body #product_app .app-box {
+  .product-body #product_app .ekyc-app-box {
     gap: 1rem !important;
   }
   .product-body {
@@ -1190,12 +1241,30 @@ footer {
   .product-body #product_featured {
     padding-bottom: 3rem;
   }
-  .product-body #product_app .list-app {
+  .product-body #product_app .ekyc-app {
     justify-content: center;
     gap: 1rem;
-    .app-box {
+    .ekyc-app-box {
       width: 48%;
     }
+  }
+  .product-body #product_benefit .middle-col {
+    gap: 1.5rem;
+  }
+  .product-body #product_benefit .bm-benefit .bm-benefit-box 
+  {
+    img {
+      margin-bottom: 1rem;
+    }
+    .bm-benefit-name {
+      font-size: 1.6rem;
+    }
+    .bm-benefit-des {
+      font-size: 1.4rem;
+    }
+  }
+  .product-body #product_app .faceid-app .faceid-app-box {
+    gap: 1rem;
   }
 }
 
