@@ -54,3 +54,62 @@ $(document).ready(function () {
     $("#" + contentId).show();
   });
 });
+
+// Other Field - Solution
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    spaceBetween: 30,
+    loop: true,
+    // Tính toán số lượng slide hiển thị theo tỉ lệ màn hình
+    slidesPerView: calculateSlidesPerView(),
+  });
+
+  // Hàm tính toán số lượng slide per view
+  function calculateSlidesPerView() {
+    // Lấy chiều rộng của cửa sổ trình duyệt
+    const windowWidth = window.innerWidth;
+
+    // Tùy chỉnh số lượng slide per view dựa trên kích thước cửa sổ
+    if (windowWidth >= 1024) {
+      return 3.5; // Ví dụ: hiển thị 3.5 slide khi chiều rộng >= 1024px
+    } else if (windowWidth >= 768) {
+      return 2.5; // Ví dụ: hiển thị 2.5 slide khi chiều rộng >= 768px
+    } else {
+      return 1.5; // Ví dụ: hiển thị 1.5 slide mặc định cho các kích thước cửa sổ nhỏ hơn
+    }
+  }
+
+  // Đảm bảo sự thay đổi số lượng slide khi thay đổi kích thước cửa sổ
+  window.addEventListener("resize", function () {
+    swiper.params.slidesPerView = calculateSlidesPerView();
+    swiper.update(); // Cập nhật Swiper
+  });
+  document.querySelector(".arrow-prev").addEventListener("click", function () {
+    swiper.slidePrev();
+  });
+
+  document.querySelector(".arrow-next").addEventListener("click", function () {
+    swiper.slideNext();
+  });
+});
+
+// Hover khám phá thêm lĩnh vực khác
+$(document).ready(function () {
+  $(".slide-hover").hover(
+    function () {
+      $(this)
+        .find(".field-hover")
+        .stop(true, true)
+        .fadeIn(500)
+        .css("display", "flex");
+    },
+    function () {
+      $(this).find(".field-hover").stop(true, true).fadeOut(500);
+    }
+  );
+});

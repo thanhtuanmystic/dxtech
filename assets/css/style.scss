@@ -1158,7 +1158,8 @@ footer {
     }
     .customer-mornitoring-box {
       display: flex;
-      padding: 32px 24px;
+      padding: 3.2rem 2.4rem;
+      height: 100%;
       flex-direction: column;
       align-items: center;
       gap: 20px;
@@ -1175,6 +1176,53 @@ footer {
         font-style: normal;
         font-weight: 700;
         line-height: 150%; /* 30px */
+      }
+    }
+  }
+  
+  #other_field {
+    padding-bottom: 10rem;
+    .container {
+      overflow: hidden;
+    }
+    .other-field-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      div:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+
+    .field-name {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 150%;
+      margin-top: 1.6rem;
+    }
+
+    .field-hover {
+      width: 90%;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: rgba(41, 41, 41, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      position: absolute;
+      bottom: 20%;
+      left: 5%;
+      justify-content: space-between;
+      align-items: center;
+      display: none;
+      flex-wrap: wrap;
+      &-name {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      &-detail {
+        font-size: 1.6rem;
+        font-weight: 400;
       }
     }
   }
@@ -1215,6 +1263,9 @@ footer {
   }
   .product-body #product_featured .featured-row .featured-info .featured-name {
     font-size: 2.4rem;
+  }
+  .solution-body #other_field .field-hover-name {
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1264,6 +1315,41 @@ footer {
   .product-body #product_benefit .bm-benefit .bm-benefit-box {
     padding: 1.4rem;
   }
+  .banking-bg {
+    height: 35rem;
+  }
+  .solution-body header {
+    padding: 0 !important;
+  }
+  .solution-title-heading {
+    font-size: 3.6rem;
+  }
+  .solution-title-sub-heading {
+    font-size: 1.6rem;
+  }
+  .solution-body #other_field .field-name {
+    font-size: 1.8rem;
+  }
+  .solution-body #customer_mornitoring .title {
+    font-size: 2.4rem;
+  }
+  .solution-body #banking_overall .overall-box .overall-name {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .solution-body #banking_overall .overall-box .overall-des {
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+  }
+  .solution-body {
+    #banking_overall {
+      padding: 5rem 0;
+    }
+    #customer_mornitoring,
+    #other_field {
+      padding-bottom: 5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -1309,6 +1395,31 @@ footer {
       width: 48%;
     }
   }
+  .solution-body #banking_overall .overall-side {
+    gap: 2rem;
+    margin-top: 0;
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+  }
+  .solution-body #banking_overall .overall-middle {
+    // gap: 2rem;
+    // margin: 2rem 0;
+    display: none;
+  }
+  .solution-body
+    #customer_mornitoring
+    .customer-mornitoring-box
+    .customer-mornitoring-name {
+    font-size: 1.6rem;
+  }
+  .solution-body #customer_mornitoring .title {
+    font-size: 2rem;
+  }
+  .banking-bg {
+    height: auto;
+    padding: 5rem 0;
+  }
 }
 
 /*Ipad dọc(768 x 1024)*/
@@ -1345,6 +1456,13 @@ footer {
   .main #dxt_our_product .solution-content .list-btn {
     gap: 1rem;
     margin-top: 2rem;
+  }
+  .solution-body #other_field .field-name {
+    font-size: 1.4rem;
+  }
+  .solution-body #customer_mornitoring .customer-mornitoring-box {
+    padding: 2rem 0;
+    gap: 1rem;
   }
 }
 
