@@ -113,3 +113,21 @@ $(document).ready(function () {
     }
   );
 });
+
+// Xử lý slide trang giải pháp bán lẻ
+
+$(document).ready(function () {
+  var $carousel = $("#retailCarousel");
+  var $indicators = $(".carousel-indicators .indicator");
+
+  $carousel.on("slide.bs.carousel", function (e) {
+    var newIndex = $(e.relatedTarget).index();
+    $indicators.removeClass("active");
+    $indicators.eq(newIndex).addClass("active");
+  });
+
+  $indicators.click(function () {
+    var index = $(this).data("slide-to");
+    $carousel.carousel(index);
+  });
+});
