@@ -5,13 +5,20 @@ $(document).ready(function () {
   var $navLinks = $(".nav-links");
   var $menuOpenBtn = $(".navbar .bx-menu");
   var $menuCloseBtn = $(".nav-links .bx-x");
+  var $overlay = $(".overlay");
 
   $menuOpenBtn.on("click", function () {
     $navLinks.css("left", "0");
+    $overlay.show();
   });
 
   $menuCloseBtn.on("click", function () {
     $navLinks.css("left", "-100%");
+    $overlay.hide(); // Ẩn overlay khi click vào nó
+  });
+  $overlay.on("click", function () {
+    $navLinks.css("left", "-100%");
+    $overlay.hide(); // Ẩn overlay khi click vào nó
   });
 
   // sidebar submenu open close js code

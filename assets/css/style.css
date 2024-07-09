@@ -79,6 +79,17 @@ nav .navbar {
   font-weight: 600;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+
 nav .navbar .nav-links {
   line-height: 8rem;
   height: 100%;
@@ -226,7 +237,7 @@ nav .navbar .links li:hover .js-sub-menu {
     padding: 2rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
-    z-index: 1000;
+    z-index: 100;
   }
   .navbar .nav-links .sidebar-logo {
     display: flex;
