@@ -1098,6 +1098,27 @@ footer .list-social-media li:hover {
   height: 65rem;
 }
 
+.industrial-park-bg {
+  background-image: url(../img/giaiphap/industrial-park-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65rem;
+}
+
+.office-bg {
+  background-image: url(../img/giaiphap/office-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65rem;
+}
+
+.school-bg {
+  background-image: url(../img/giaiphap/school-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65rem;
+}
+
 .solution-body {
   background-image: url(../img/giaiphap/solution-bg.png);
   background-size: cover;
@@ -1332,6 +1353,99 @@ footer .list-social-media li:hover {
   font-size: 1.8rem;
   font-weight: 400;
 }
+.solution-body #camera_ai {
+  padding: 10rem 0;
+}
+.solution-body #office_section {
+  padding: 10rem 0;
+}
+.solution-body #office_section .office-box {
+  height: 100%;
+  display: flex;
+  padding: 2.4rem;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 20px;
+  background: var(--BG-2, linear-gradient(180deg, rgba(207, 212, 255, 0.35) 0%, rgba(207, 212, 255, 0) 100%));
+}
+.solution-body #office_section .office-box .office-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.solution-body #school_featured {
+  padding: 10rem 0;
+}
+.solution-body #school_featured .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.solution-body #school_featured .school-featured-box {
+  height: 100%;
+  display: flex;
+  padding: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 20px;
+  background: var(--BG-2, linear-gradient(180deg, rgba(207, 212, 255, 0.35) 0%, rgba(207, 212, 255, 0) 100%));
+}
+.solution-body #school_featured .school-featured-box .school-featured-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.solution-body #school_featured .smart-school-title {
+  font-family: SVN-Gilroy;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+.solution-body #school_featured .smart-school-des {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.solution-body #school_featured .effective-percent-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.solution-body #school_featured .effective-percent-box .effective-percent-img {
+  max-width: 50%;
+}
+.solution-body #school_featured .effective-percent-box .title {
+  text-align: center;
+  font-family: SVN-Gilroy;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.solution-body #school_featured .effective-percent-box .effective-type {
+  transform: "";
+  -webkit-transform: upper;
+  -moz-transform: upper;
+  -ms-transform: upper;
+  -o-transform: upper;
+}
+.solution-body #school_featured .school-pros-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  background: var(--BG-2, linear-gradient(180deg, rgba(207, 212, 255, 0.35) 0%, rgba(207, 212, 255, 0) 100%));
+  border: 1px solid var(--Gradient-Purple, #282663);
+}
+.solution-body #school_featured .school-pros-box .school-pros-text {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.solution-body #school_featured .school-thanhngang {
+  margin-top: 5rem;
+}
 
 #other_field {
   padding-bottom: 10rem;
@@ -1434,7 +1548,10 @@ footer .list-social-media li:hover {
   }
   .main #dxt_produce .produce-box .produce-name,
   .main #dxt_tech .tech-box .tech-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .main #dxt_tech .tech-box .tech-name {
+    margin-bottom: 1rem;
   }
   .main #dxt_our_product .list-solution .solution-click {
     height: auto;
@@ -1452,7 +1569,7 @@ footer .list-social-media li:hover {
   .product-slogan {
     font-size: 3rem;
   }
-  .app-des {
+  .product-body #product_app .ekyc-app .app-des {
     font-size: 1.6rem;
   }
   .product-body #product_benefit .benefit-box .benefit-name,
@@ -1463,7 +1580,7 @@ footer .list-social-media li:hover {
     padding: 3rem 1.6rem !important;
   }
   .product-body #product_featured .featured-row .featured-info .featured-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .product-body #product_benefit .bm-benefit .bm-benefit-box {
     padding: 1.4rem;
@@ -1471,7 +1588,10 @@ footer .list-social-media li:hover {
   .banking-bg,
   .insurance-bg,
   .retail-bg,
-  .hospital-bg {
+  .hospital-bg,
+  .industrial-park-bg,
+  .office-bg,
+  .school-bg {
     height: 35rem;
   }
   .solution-body header {
@@ -1497,9 +1617,15 @@ footer .list-social-media li:hover {
     margin-top: 1.4rem;
     font-size: 1.4rem;
   }
+  .solution-body #customer_mornitoring .customer-mornitoring-box .customer-mornitoring-name {
+    font-size: 1.6rem;
+  }
   .solution-body #banking_overall,
   .solution-body #insurance_tree,
-  .solution-body #retail_section, .solution-body #hospital_section {
+  .solution-body #retail_section,
+  .solution-body #hospital_section,
+  .solution-body #camera_ai,
+  .solution-body #office_section, .solution-body #school_featured {
     padding: 5rem 0;
   }
   .solution-body #customer_mornitoring,
@@ -1528,6 +1654,29 @@ footer .list-social-media li:hover {
     gap: 1rem;
   }
   .solution-body #hospital_section .hospital-box .hospital-name {
+    font-size: 1.6rem;
+  }
+  .solution-body #office_section .office-box {
+    padding: 1.6rem;
+    gap: 1rem;
+  }
+  .solution-body #office_section .office-box .office-text {
+    font-size: 1.6rem;
+  }
+  .solution-body #school_featured .smart-school-title {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  .solution-body #school_featured .effective-percent-box .title {
+    font-size: 2.4rem;
+  }
+  .solution-body #school_featured .school-pros-box .school-pros-text {
+    font-size: 1.6rem;
+  }
+  .solution-body #school_featured .container {
+    gap: 5rem;
+  }
+  .product-body #product_benefit .bm-benefit .bm-benefit-box .bm-benefit-name {
     font-size: 1.6rem;
   }
 }
@@ -1582,16 +1731,16 @@ footer .list-social-media li:hover {
   .solution-body #banking_overall .overall-middle {
     display: none;
   }
-  .solution-body #customer_mornitoring .customer-mornitoring-box .customer-mornitoring-name {
-    font-size: 1.6rem;
-  }
   .solution-body #customer_mornitoring .title {
     font-size: 2rem;
   }
   .banking-bg,
   .insurance-bg,
   .retail-bg,
-  .hospital-bg {
+  .hospital-bg,
+  .office-bg,
+  .industrial-park-bg,
+  .school-bg {
     height: auto;
     padding: 5rem 0;
   }
@@ -1612,6 +1761,16 @@ footer .list-social-media li:hover {
   }
   .solution-body #hospital_section .hospital-des {
     font-size: 1.6rem;
+  }
+  .solution-body #school_featured .effective-percent-box .title {
+    font-size: 1.8rem;
+  }
+  .solution-body #school_featured .school-featured-box {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .solution-body #school_featured .school-pros-box {
+    padding: 2rem;
   }
 }
 /*Ipad dọc(768 x 1024)*/
@@ -1637,6 +1796,9 @@ footer .list-social-media li:hover {
   }
   .dxt-title-row .dxt-title {
     width: 100%;
+  }
+  .main #dxt_produce .produce-box img {
+    max-width: 20%;
   }
   .main #dxt_our_product .list-solution {
     gap: 1rem;
@@ -1707,6 +1869,9 @@ footer .list-social-media li:hover {
   footer .col-title {
     margin-bottom: 1rem;
   }
+  .main #dxt_produce .produce-box img {
+    max-width: 15%;
+  }
   .product-body #product_app .ekyc-app-box {
     gap: 1rem !important;
   }
@@ -1774,7 +1939,22 @@ footer .list-social-media li:hover {
   .solution-body #hospital_section .hospital-des {
     margin: 2rem 0;
   }
+  .solution-body #camera_ai,
+  .solution-body #office_section, #school_featured {
+    padding: 2rem 0;
+  }
+  .solution-body #school_featured .container {
+    gap: 2rem;
+  }
+  .solution-body #school_featured .school-thanhngang {
+    display: none;
+  }
 }
 /*Tablet nhỏ(480 x 640)*/
+/** < 1200
+Titile ngoài: 2rem
+title trong: 1.8rem
+des : 1.6rem
+*/
 
 /*# sourceMappingURL=style.css.map */
