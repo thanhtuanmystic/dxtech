@@ -471,7 +471,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 // Header
 
-header {
+#index_hero {
   background-image: url(../img/header-background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -916,13 +916,13 @@ footer {
   line-height: 150%;
 }
 .product-body {
-  header {
-    background: none;
-    height: auto;
+  #product_hero {
     padding: 10rem 0;
     .list-btn {
+      display: flex;
       justify-content: flex-start;
       margin-top: 3.2rem;
+      gap: 2rem;
     }
   }
   background-image: url(../img/sanpham/ekyc-background.png);
@@ -1143,10 +1143,6 @@ footer {
   background-image: url(../img/giaiphap/solution-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  header {
-    background: none;
-    height: auto;
-  }
   #banking_overall {
     padding: 10rem 0;
     .overall-middle {
@@ -1506,7 +1502,6 @@ footer {
         font-weight: 700;
         text-align: center;
       }
-    
     }
     .school-thanhngang {
       margin-top: 5rem;
@@ -1567,15 +1562,11 @@ footer {
 }
 /*Laptop thông thường */
 @media screen and (max-width: 1400px) {
-  header {
-    height: auto;
-    padding: 5rem 0 !important;
-  }
-  header .container .slogan,
+  #index_hero .container .slogan,
   .product-slogan {
     font-size: 4rem;
   }
-  header .container .header-partner {
+  #index_hero .container .header-partner {
     margin-top: 6rem;
   }
   .dxt-title-row .dxt-title {
@@ -1610,6 +1601,10 @@ footer {
   nav .navbar .links li a {
     font-size: 1.4rem;
   }
+  #index_hero {
+    height: auto;
+    padding: 8rem 0;
+  }
   .login-header .dxt-primary-btn div {
     padding: 0.8rem;
     font-size: 1.6rem;
@@ -1640,6 +1635,9 @@ footer {
   .product-slogan {
     font-size: 3rem;
   }
+  .product-body #product_hero {
+    padding: 5rem 0;
+  }
   .product-body #product_app .ekyc-app .app-des {
     font-size: 1.6rem;
   }
@@ -1664,9 +1662,6 @@ footer {
   .office-bg,
   .school-bg {
     height: 35rem;
-  }
-  .solution-body header {
-    padding: 0 !important;
   }
   .solution-title-heading {
     font-size: 3.6rem;
@@ -1700,7 +1695,8 @@ footer {
     #retail_section,
     #hospital_section,
     #camera_ai,
-    #office_section, #school_featured {
+    #office_section,
+    #school_featured {
       padding: 5rem 0;
     }
     #customer_mornitoring,
@@ -1755,14 +1751,17 @@ footer {
   .product-body #product_benefit .bm-benefit .bm-benefit-box .bm-benefit-name {
     font-size: 1.6rem;
   }
-
 }
 
 @media screen and (max-width: 990px) {
-  header .container .slogan {
+  #index_hero {
+    height: auto;
+    padding: 4rem 0;
+  } 
+  #index_hero .container .slogan {
     font-size: 3rem;
   }
-  header .container .header-partner .title {
+  #index_hero .container .header-partner .title {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -1813,7 +1812,7 @@ footer {
     // margin: 2rem 0;
     display: none;
   }
-  
+
   .solution-body #customer_mornitoring .title {
     font-size: 2rem;
   }
@@ -1859,18 +1858,18 @@ footer {
 
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 768px) {
-  header .container .slogan {
+  #index_hero .container .slogan {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  header .container .slogan-sub {
+  #index_hero .container .slogan-sub {
     text-align: justify;
     font-size: 1.4rem;
   }
-  header .container .list-btn {
+  #index_hero .container .list-btn {
     gap: 1rem;
   }
-  header .container .header-partner {
+  #index_hero .container .header-partner {
     margin-top: 4rem;
   }
   .dxt-title-row {
@@ -1914,19 +1913,19 @@ footer {
       padding: 2rem 0;
     }
   }
-  header {
+  #index_hero {
     padding: 3rem 0;
   }
-  header .container .slogan-sub {
+  #index_hero .container .slogan-sub {
     margin-bottom: 2rem;
   }
-  header .container .header-partner {
+  #index_hero .container .header-partner {
     margin-top: 2rem;
   }
   .dxt_form_register {
     padding: 2rem 1rem;
   }
-  header .container .header-partner .list-partner {
+  #index_hero .container .header-partner .list-partner {
     gap: 0;
   }
   .dxt-title {
@@ -1961,6 +1960,9 @@ footer {
   .main #dxt_produce .produce-box img {
     max-width: 15%;
   }
+  .product-body #product_hero {
+    padding: 2rem 0;
+  }
   .product-body #product_app .ekyc-app-box {
     gap: 1rem !important;
   }
@@ -1974,9 +1976,6 @@ footer {
   }
   .product-body #product_benefit .benefit-box {
     gap: 2rem;
-  }
-  .product-body header {
-    padding: 2rem 0 !important;
   }
   .product-slogan {
     margin-bottom: 1rem;
@@ -2033,7 +2032,8 @@ footer {
     margin: 2rem 0;
   }
   .solution-body #camera_ai,
-  .solution-body #office_section, #school_featured {
+  .solution-body #office_section,
+  #school_featured {
     padding: 2rem 0;
   }
   .solution-body #school_featured .container {
@@ -2047,7 +2047,6 @@ footer {
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 480px) {
 }
-
 
 /** < 1200
 Titile ngoài: 2rem

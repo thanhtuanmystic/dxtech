@@ -482,7 +482,7 @@ nav .navbar .links li:hover .js-sub-menu {
   -webkit-line-clamp: 5;
 }
 
-header {
+#index_hero {
   background-image: url(../img/header-background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -491,11 +491,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-header .container {
+#index_hero .container {
   display: flex;
   flex-direction: column;
 }
-header .container .slogan {
+#index_hero .container .slogan {
   color: var(--Backgrounds-Primary, #fff);
   text-align: center;
   /* Shadow 1 */
@@ -508,7 +508,7 @@ header .container .slogan {
   line-height: 120%; /* 72px */
   margin-bottom: 3.2rem;
 }
-header .container .slogan-sub {
+#index_hero .container .slogan-sub {
   color: var(--Backgrounds-Primary, #fff);
   text-align: center;
   font-size: 1.8rem;
@@ -516,20 +516,20 @@ header .container .slogan-sub {
   line-height: 150%; /* 27px */
   margin-bottom: 3.2rem;
 }
-header .container .list-btn {
+#index_hero .container .list-btn {
   display: flex;
   gap: 2.4rem;
   justify-content: center;
   align-items: center;
 }
-header .container .header-partner {
+#index_hero .container .header-partner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 12rem;
 }
-header .container .header-partner .title {
+#index_hero .container .header-partner .title {
   color: var(--Backgrounds-Primary, #fff);
   font-size: 2.4rem;
   font-style: normal;
@@ -537,7 +537,7 @@ header .container .header-partner .title {
   line-height: 150%; /* 36px */
   margin-bottom: 2.4rem;
 }
-header .container .header-partner .list-partner {
+#index_hero .container .header-partner .list-partner {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -914,14 +914,14 @@ footer .list-social-media li:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.product-body header {
-  background: none;
-  height: auto;
+.product-body #product_hero {
   padding: 10rem 0;
 }
-.product-body header .list-btn {
+.product-body #product_hero .list-btn {
+  display: flex;
   justify-content: flex-start;
   margin-top: 3.2rem;
+  gap: 2rem;
 }
 .product-body #product_benefit {
   padding-bottom: 10rem;
@@ -1123,10 +1123,6 @@ footer .list-social-media li:hover {
   background-image: url(../img/giaiphap/solution-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
-.solution-body header {
-  background: none;
-  height: auto;
 }
 .solution-body #banking_overall {
   padding: 10rem 0;
@@ -1496,15 +1492,11 @@ footer .list-social-media li:hover {
 /*Màn to(>1600px)*/
 /*Laptop thông thường */
 @media screen and (max-width: 1400px) {
-  header {
-    height: auto;
-    padding: 5rem 0 !important;
-  }
-  header .container .slogan,
+  #index_hero .container .slogan,
   .product-slogan {
     font-size: 4rem;
   }
-  header .container .header-partner {
+  #index_hero .container .header-partner {
     margin-top: 6rem;
   }
   .dxt-title-row .dxt-title {
@@ -1539,6 +1531,10 @@ footer .list-social-media li:hover {
   nav .navbar .links li a {
     font-size: 1.4rem;
   }
+  #index_hero {
+    height: auto;
+    padding: 8rem 0;
+  }
   .login-header .dxt-primary-btn div {
     padding: 0.8rem;
     font-size: 1.6rem;
@@ -1569,6 +1565,9 @@ footer .list-social-media li:hover {
   .product-slogan {
     font-size: 3rem;
   }
+  .product-body #product_hero {
+    padding: 5rem 0;
+  }
   .product-body #product_app .ekyc-app .app-des {
     font-size: 1.6rem;
   }
@@ -1593,9 +1592,6 @@ footer .list-social-media li:hover {
   .office-bg,
   .school-bg {
     height: 35rem;
-  }
-  .solution-body header {
-    padding: 0 !important;
   }
   .solution-title-heading {
     font-size: 3.6rem;
@@ -1625,7 +1621,8 @@ footer .list-social-media li:hover {
   .solution-body #retail_section,
   .solution-body #hospital_section,
   .solution-body #camera_ai,
-  .solution-body #office_section, .solution-body #school_featured {
+  .solution-body #office_section,
+  .solution-body #school_featured {
     padding: 5rem 0;
   }
   .solution-body #customer_mornitoring,
@@ -1681,10 +1678,14 @@ footer .list-social-media li:hover {
   }
 }
 @media screen and (max-width: 990px) {
-  header .container .slogan {
+  #index_hero {
+    height: auto;
+    padding: 4rem 0;
+  }
+  #index_hero .container .slogan {
     font-size: 3rem;
   }
-  header .container .header-partner .title {
+  #index_hero .container .header-partner .title {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -1775,18 +1776,18 @@ footer .list-social-media li:hover {
 }
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 768px) {
-  header .container .slogan {
+  #index_hero .container .slogan {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  header .container .slogan-sub {
+  #index_hero .container .slogan-sub {
     text-align: justify;
     font-size: 1.4rem;
   }
-  header .container .list-btn {
+  #index_hero .container .list-btn {
     gap: 1rem;
   }
-  header .container .header-partner {
+  #index_hero .container .header-partner {
     margin-top: 4rem;
   }
   .dxt-title-row {
@@ -1825,19 +1826,19 @@ footer .list-social-media li:hover {
   .main #dxt_form_register {
     padding: 2rem 0;
   }
-  header {
+  #index_hero {
     padding: 3rem 0;
   }
-  header .container .slogan-sub {
+  #index_hero .container .slogan-sub {
     margin-bottom: 2rem;
   }
-  header .container .header-partner {
+  #index_hero .container .header-partner {
     margin-top: 2rem;
   }
   .dxt_form_register {
     padding: 2rem 1rem;
   }
-  header .container .header-partner .list-partner {
+  #index_hero .container .header-partner .list-partner {
     gap: 0;
   }
   .dxt-title {
@@ -1872,6 +1873,9 @@ footer .list-social-media li:hover {
   .main #dxt_produce .produce-box img {
     max-width: 15%;
   }
+  .product-body #product_hero {
+    padding: 2rem 0;
+  }
   .product-body #product_app .ekyc-app-box {
     gap: 1rem !important;
   }
@@ -1883,9 +1887,6 @@ footer .list-social-media li:hover {
   }
   .product-body #product_benefit .benefit-box {
     gap: 2rem;
-  }
-  .product-body header {
-    padding: 2rem 0 !important;
   }
   .product-slogan {
     margin-bottom: 1rem;
@@ -1940,7 +1941,8 @@ footer .list-social-media li:hover {
     margin: 2rem 0;
   }
   .solution-body #camera_ai,
-  .solution-body #office_section, #school_featured {
+  .solution-body #office_section,
+  #school_featured {
     padding: 2rem 0;
   }
   .solution-body #school_featured .container {
