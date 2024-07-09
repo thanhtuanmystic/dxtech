@@ -219,9 +219,9 @@ nav .navbar .links li:hover .js-sub-menu {
     top: 0;
     left: -100%;
     display: block;
-    max-width: 27rem;
+    max-width: 70%;
     width: 100%;
-    background: #3e8da8;
+    background: #4b4a4a;
     line-height: 4rem;
     padding: 2rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -291,17 +291,12 @@ nav .navbar .links li:hover .js-sub-menu {
   nav .navbar .links li:hover .js-sub-menu {
     display: none;
   }
-  .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-  .navbar .nav-links.show3 .links .js-sub-menu,
-  .navbar .nav-links.show2 .links .more .more-sub-menu {
-    display: block;
-  }
-  .navbar .nav-links.show1 .links .htmlcss-arrow,
-  .navbar .nav-links.show3 .links .js-arrow {
-    transform: rotate(180deg);
-  }
-  .navbar .nav-links.show2 .links .more-arrow {
-    transform: rotate(90deg);
+  .rotated {
+    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
   }
 }
 @media (max-width: 370px) {

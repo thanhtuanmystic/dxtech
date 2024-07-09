@@ -1,21 +1,30 @@
-// search-box open close js code
-let navbar = document.querySelector(".navbar");
-// sidebar open close js code
-let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function () {
-  navLinks.style.left = "0";
-};
-menuCloseBtn.onclick = function () {
-  navLinks.style.left = "-100%";
-};
+$(document).ready(function () {
+  // search-box open close js code
+  var $navbar = $(".navbar");
+  // sidebar open close js code
+  var $navLinks = $(".nav-links");
+  var $menuOpenBtn = $(".navbar .bx-menu");
+  var $menuCloseBtn = $(".nav-links .bx-x");
 
-// sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function () {
-  navLinks.classList.toggle("show1");
-};
+  $menuOpenBtn.on("click", function () {
+    $navLinks.css("left", "0");
+  });
+
+  $menuCloseBtn.on("click", function () {
+    $navLinks.css("left", "-100%");
+  });
+
+  // sidebar submenu open close js code
+  var $htmlcssArrow = $(".click_on_mobile");
+  $htmlcssArrow.on("click", function () {
+    var $subMenu = $(this).find(".sub-menu");
+    var $icon = $(this).find("i.htmlcss-arrow");
+
+    $subMenu.slideToggle(300);
+    $icon.toggleClass("rotated");
+  });
+});
+
 // Xử lý slide feedback trang chủ
 
 $(document).ready(function () {
