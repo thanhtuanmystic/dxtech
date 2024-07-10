@@ -149,3 +149,17 @@ $(document).ready(function () {
     $carousel.carousel(index);
   });
 });
+
+// Xử lý ẩn hiện câu trả lời quy trình tuyển dụng ở trang tuyển dụng
+$(document).ready(function () {
+  $(".faq-item").click(function () {
+    var $answer = $(this).next(".faq-answer");
+    var $icon = $(this).find(".fa");
+
+    $(".faq-answer").not($answer).slideUp();
+    $(".icon-container .fa").not($icon).removeClass("rotate90");
+
+    $answer.slideToggle();
+    $icon.toggleClass("rotate90");
+  });
+});

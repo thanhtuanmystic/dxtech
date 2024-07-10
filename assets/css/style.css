@@ -9,6 +9,10 @@
   font-family: SVN-Gilroy;
   src: url(../font/FontGilroyVHFull/SVN-Gilroy\ Regular.otf);
 }
+@font-face {
+  font-family: SVN-Gilroy-bold;
+  src: url(../font/FontGilroyVHFull/SVN-Gilroy\ Bold.otf);
+}
 :root {
   --bs-font-monospace: inherit;
   --bs-font-sans-serif: inherit;
@@ -1494,6 +1498,265 @@ footer .list-social-media li:hover {
   font-weight: 400;
 }
 
+.tuyendung-body .dxt-title {
+  color: var(--Main-Blue, #282663);
+  font-family: SVN-Gilroy-bold;
+}
+.tuyendung-body .dxt-title span {
+  background: var(--Logo-Red, linear-gradient(90deg, #811643 0%, #ec2224 99.99%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  line-height: 150%;
+}
+.tuyendung-body .dxt-primary-btn div:hover {
+  border: 1px solid orangered;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.tuyendung-body header nav {
+  background: #fff;
+}
+.tuyendung-body header nav .navbar .nav-links {
+  background: #fff;
+}
+.tuyendung-body header nav .navbar .links li:hover > a {
+  color: orangered;
+}
+.tuyendung-body header nav .navbar .links li a {
+  color: var(--Main-Blue, #282663);
+}
+.tuyendung-body header nav .navbar .links li .arrow {
+  color: var(--Main-Blue, #282663);
+}
+.tuyendung-body header nav .navbar .links li .sub-menu {
+  background: #fff;
+}
+.tuyendung-body header nav .navbar .links li .sub-menu li:hover > a {
+  color: orangered;
+}
+.tuyendung-body header nav .navbar .links li .sub-menu a {
+  color: var(--Main-Blue, #282663);
+}
+.tuyendung-body .sidebar-logo i, .tuyendung-body .navbar .bx-menu {
+  color: #000;
+}
+.tuyendung-body #tuyendung_hero {
+  background-image: url(../img/tuyendung/background-tuyendung.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+.tuyendung-body #tuyendung_hero .content-left .title {
+  color: var(--Basic-en, #2c2c2c);
+  font-family: SVN-Gilroy-bold;
+  font-size: 5.6rem;
+  font-style: normal;
+  line-height: 130%; /* 72.8px */
+}
+.tuyendung-body #tuyendung_hero .content-left .title span {
+  background: var(--Logo-Red, linear-gradient(90deg, #811643 0%, #ec2224 99.99%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: SVN-Gilroy-bold;
+}
+.tuyendung-body #tuyendung_hero .content-left .sub-title {
+  overflow: hidden;
+  color: var(--Basic-en, #2c2c2c);
+  text-overflow: ellipsis;
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  align-self: stretch;
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+.tuyendung-body #tuyendung_benefits {
+  padding: 10rem 0;
+}
+.tuyendung-body #tuyendung_benefits .benefits-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.tuyendung-body #tuyendung_benefits .benefits-box .benefits-name {
+  color: var(--Basic-en, #2c2c2c);
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.tuyendung-body #tuyendung_benefits .benefits-box .benefits-des {
+  color: #000;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.tuyendung-body #tuyendung_jobs {
+  padding: 8rem 0;
+  background: var(--Main-Blue, #282663);
+}
+.tuyendung-body #tuyendung_jobs .dxt-title {
+  color: #fff;
+}
+.tuyendung-body #tuyendung_jobs .job-box {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.tuyendung-body #tuyendung_jobs .job-box:hover {
+  border: 2px solid var(--Main-Blue-2, #657eff);
+  cursor: pointer;
+}
+.tuyendung-body #tuyendung_jobs .job-box .job-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.tuyendung-body #tuyendung_jobs .job-box .job-days-left {
+  color: var(--foundation-violet-light-active, #9292a6);
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.tuyendung-body #tuyendung_jobs .job-box .job-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Backgrounds-Primary, #fff);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+}
+.tuyendung-body #tuyendung_jobs .job-box .job-row .job-location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.tuyendung-body #tuyendung_jobs .job-box .job-row .job-salary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.tuyendung-body #tuyendung_process {
+  padding: 10rem 0;
+}
+.tuyendung-body #tuyendung_process .faq-box {
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #dfdee8;
+}
+.tuyendung-body #tuyendung_process .faq-box:hover > .faq-item .faq-question {
+  color: orangered;
+}
+.tuyendung-body #tuyendung_process .faq-box .faq-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tuyendung-body #tuyendung_process .faq-box .faq-item .faq-question {
+  color: var(--Basic-en, #2c2c2c);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.tuyendung-body #tuyendung_process .faq-box .faq-answer {
+  display: none;
+  color: var(--Basic-en, #2c2c2c);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2.4rem;
+}
+.tuyendung-body #tuyendung_process .faq-box .icon-container i {
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: var(--Basic-en, #2c2c2c);
+}
+.tuyendung-body #tuyendung_process .rotate90 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.tuyendung-body #tuyendung_moment {
+  padding-bottom: 10rem;
+}
+.tuyendung-body #tuyendung_get_noti {
+  padding: 5rem 0;
+  background-image: url(../img/tuyendung/tuyendung-getnoti-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tuyendung-body #tuyendung_get_noti .dxt-title {
+  color: #fff;
+}
+.tuyendung-body #tuyendung_get_noti .get-noti-des {
+  color: var(--Foundation-Violet-Light, #eae9ef);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.tuyendung-body #tuyendung_get_noti .get-noti-box {
+  display: flex;
+  gap: 0.4rem;
+  align-items: stretch;
+}
+.tuyendung-body #tuyendung_get_noti .get-noti-box input {
+  display: flex;
+  width: 400px;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 40px 0px 0px 40px;
+  background: var(--Backgrounds-Primary, #fff);
+  color: var(--foundation-violet-light-active, #9292a6);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+.tuyendung-body #tuyendung_get_noti .get-noti-box button {
+  display: flex;
+  width: 19rem;
+  padding: 1.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 0px 40px 40px 0px;
+  background: var(--Backgrounds-Primary, #fff);
+  color: var(--Main-Blue, #282663);
+  /* Title/Sub */
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+}
+.tuyendung-body footer {
+  background: #fff;
+}
+.tuyendung-body footer .col-title {
+  color: var(--Basic-en, #2c2c2c);
+}
+.tuyendung-body footer .footer-col-content li {
+  color: var(--Basic-en, #2c2c2c);
+}
+
 /* Responsive */
 /*Màn to(>1600px)*/
 /*Laptop thông thường */
@@ -1682,6 +1945,27 @@ footer .list-social-media li:hover {
   .product-body #product_benefit .bm-benefit .bm-benefit-box .bm-benefit-name {
     font-size: 1.6rem;
   }
+  .tuyendung-body #tuyendung_hero {
+    padding: 5rem 0;
+  }
+  .tuyendung-body #tuyendung_hero .content-left .title {
+    font-size: 3rem;
+  }
+  .tuyendung-body #tuyendung_benefits,
+  .tuyendung-body #tuyendung_jobs,
+  .tuyendung-body #tuyendung_process,
+  .tuyendung-body #tuyendung_get_noti,
+  .tuyendung-body #tuyendung_moment,
+  .tuyendung-body footer {
+    padding: 5rem 0;
+  }
+  .tuyendung-body #tuyendung_benefits .benefits-box .benefits-name {
+    font-size: 1.8rem;
+  }
+  .tuyendung-body #tuyendung_jobs .job-box .job-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media screen and (max-width: 990px) {
   #index_hero {
@@ -1778,6 +2062,9 @@ footer .list-social-media li:hover {
   }
   .solution-body #school_featured .school-pros-box {
     padding: 2rem;
+  }
+  .tuyendung-body #tuyendung_process .row {
+    flex-direction: column-reverse;
   }
 }
 /*Ipad dọc(768 x 1024)*/
@@ -1956,6 +2243,20 @@ footer .list-social-media li:hover {
   }
   .solution-body #school_featured .school-thanhngang {
     display: none;
+  }
+  .tuyendung-body #tuyendung_hero {
+    padding: 2rem 0;
+  }
+  .tuyendung-body #tuyendung_hero .content-left .title {
+    font-size: 2rem;
+  }
+  .tuyendung-body #tuyendung_benefits,
+  .tuyendung-body #tuyendung_jobs,
+  .tuyendung-body #tuyendung_process,
+  .tuyendung-body #tuyendung_get_noti,
+  .tuyendung-body #tuyendung_moment,
+  .tuyendung-body footer {
+    padding: 2rem 0;
   }
 }
 /*Tablet nhỏ(480 x 640)*/
