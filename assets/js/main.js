@@ -21,15 +21,17 @@ $(document).ready(function () {
     $overlay.hide(); // Ẩn overlay khi click vào nó
   });
 
-  // sidebar submenu open close js code
-  var $htmlcssArrow = $(".click_on_mobile");
-  $htmlcssArrow.on("click", function () {
-    var $subMenu = $(this).find(".sub-menu");
-    var $icon = $(this).find("i.htmlcss-arrow");
-
-    $subMenu.slideToggle(300);
-    $icon.toggleClass("rotated");
-  });
+  // sidebar submenu open close js code (chỉ dành cho < 800px)
+  var mediaQuery = window.matchMedia("(max-width: 800px)");
+  if (mediaQuery.matches) {
+    var $htmlcssArrow = $(".click_on_mobile");
+    $htmlcssArrow.on("click", function () {
+      var $subMenu = $(this).find(".sub-menu");
+      var $icon = $(this).find("i.htmlcss-arrow");
+      $subMenu.slideToggle(300);
+      $icon.toggleClass("rotated");
+    });
+  }
 });
 
 // Xử lý slide feedback trang chủ
