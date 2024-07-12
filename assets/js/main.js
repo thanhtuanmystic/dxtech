@@ -163,3 +163,52 @@ $(document).ready(function () {
     $icon.toggleClass("rotate90");
   });
 });
+
+// Other Field - Solution
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".experience_swiper", {
+    spaceBetween: 30,
+    loop: true,
+    // Tính toán số lượng slide hiển thị theo tỉ lệ màn hình
+    slidesPerView: calculateSlidesPerView(),
+  });
+
+  function calculateSlidesPerView() {
+    const windowWidth = window.innerWidth;
+
+    // Tùy chỉnh số lượng slide per view dựa trên kích thước cửa sổ
+    if (windowWidth >= 1024) {
+      return 3.5; // Ví dụ: hiển thị 3.5 slide khi chiều rộng >= 1024px
+    } else if (windowWidth >= 768) {
+      return 2.5; // Ví dụ: hiển thị 2.5 slide khi chiều rộng >= 768px
+    } else {
+      return 1.5; // Ví dụ: hiển thị 1.5 slide mặc định cho các kích thước cửa sổ nhỏ hơn
+    }
+  }
+
+  // Đảm bảo sự thay đổi số lượng slide khi thay đổi kích thước cửa sổ
+  window.addEventListener("resize", function () {
+    swiper.params.slidesPerView = calculateSlidesPerView();
+    swiper.update(); // Cập nhật Swiper
+  });
+  document.querySelector(".arrow-prev").addEventListener("click", function () {
+    swiper.slidePrev();
+  });
+
+  document.querySelector(".arrow-next").addEventListener("click", function () {
+    swiper.slideNext();
+  });
+});
+
+// Bật tắt popup form
+$(document).ready(function () {
+  $(".openPopupForm").on("click", function () {
+    $("#dxt_popup").show();
+    $(".overlay").show();
+  });
+  $(".overlay").on("click", function () {
+    $("#dxt_popup").hide();
+    $overlay.hide(); // Ẩn overlay khi click vào nó
+  });
+});
