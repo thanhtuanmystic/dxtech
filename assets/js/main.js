@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true,
     },
     spaceBetween: 30,
-    loop: true,
     // Tính toán số lượng slide hiển thị theo tỉ lệ màn hình
     slidesPerView: calculateSlidesPerView(),
   });
@@ -164,7 +163,7 @@ $(document).ready(function () {
   });
 });
 
-// Other Field - Solution
+// Other Field - Experience
 
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".experience_swiper", {
@@ -210,5 +209,35 @@ $(document).ready(function () {
   $(".overlay").on("click", function () {
     $("#dxt_popup").hide();
     $overlay.hide(); // Ẩn overlay khi click vào nó
+  });
+});
+
+ // Xem vid demo - GSHV
+
+ document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".gshv_swiper", {
+    spaceBetween: 30,
+    loop: true,
+    // Tính toán số lượng slide hiển thị theo tỉ lệ màn hình
+    slidesPerView: calculateSlidesPerView(),
+  });
+
+  function calculateSlidesPerView() {
+    const windowWidth = window.innerWidth;
+
+    // Tùy chỉnh số lượng slide per view dựa trên kích thước cửa sổ
+    if (windowWidth >= 1024) {
+      return 3.5; // Ví dụ: hiển thị 3.5 slide khi chiều rộng >= 1024px
+    } else if (windowWidth >= 768) {
+      return 2.5; // Ví dụ: hiển thị 2.5 slide khi chiều rộng >= 768px
+    } else {
+      return 1.5; // Ví dụ: hiển thị 1.5 slide mặc định cho các kích thước cửa sổ nhỏ hơn
+    }
+  }
+
+  // Đảm bảo sự thay đổi số lượng slide khi thay đổi kích thước cửa sổ
+  window.addEventListener("resize", function () {
+    swiper.params.slidesPerView = calculateSlidesPerView();
+    swiper.update(); // Cập nhật Swiper
   });
 });
